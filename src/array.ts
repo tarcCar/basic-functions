@@ -19,3 +19,11 @@ export function difference<T>(arrayA: Array<T> | null, arrayB: Array<any> | null
   const arrays = [arrayA || [], arrayB || []];
   return arrays.reduce((a, b) => a.filter(c => !b.includes(c)));
 }
+/**
+ * Flattens array a single level deep.
+ * @param array
+ */
+export function flatten(array: any[] | null) {
+  if (!array) return [];
+  return array.reduce((a, b) => a.concat(b), []);
+}
