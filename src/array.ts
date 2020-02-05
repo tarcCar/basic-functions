@@ -10,3 +10,12 @@ export const chunck = (input: Array<any>, size: number): Array<any> => {
     return idx % size === 0 ? [...arr, [item]] : [...arr.slice(0, -1), [...arr.slice(-1)[0], item]];
   }, []);
 };
+/**
+ * returns the values from array that are not present in the other arrays.
+ * @param arrayA
+ * @param arrayB
+ */
+export function difference<T>(arrayA: Array<T> | null, arrayB: Array<any> | null): Array<T> {
+  const arrays = [arrayA || [], arrayB || []];
+  return arrays.reduce((a, b) => a.filter(c => !b.includes(c)));
+}

@@ -1,6 +1,6 @@
 import { chunck } from '../src/array';
 
-describe('Array methods', () => {
+describe('Array chunck methods', () => {
   it('Should chuck array with size 2', () => {
     const array = ['a', 'b', 'c', 'd'];
     const chucks = chunck(array, 2);
@@ -23,7 +23,7 @@ describe('Array methods', () => {
     expect(chucks).toStrictEqual([['a', 'b', 'c', 'd']]);
   });
 
-  it('not Should accept size less or equals to zero', () => {
+  it('Should throw error when size less or equals to zero', () => {
     const array = ['a', 'b', 'c', 'd'];
     function chunkArraySizeZero() {
       chunck(array, 0);
@@ -35,7 +35,7 @@ describe('Array methods', () => {
     expect(chunkArrayNegativeSize).toThrowError('Size must be greater than zero!');
   });
 
-  it('not Should accept empty array', () => {
+  it('Should throw error when empty array', () => {
     const array: any[] = [];
     function chunkEmptyArray() {
       chunck(array, 1);
@@ -43,7 +43,7 @@ describe('Array methods', () => {
     expect(chunkEmptyArray).toThrowError("Array can't be empty!");
   });
 
-  it('not Should accept null array', () => {
+  it('Should throw error when null array', () => {
     const array: any = null;
     function chunkEmptyArray() {
       chunck(array, 1);
