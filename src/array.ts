@@ -39,3 +39,14 @@ export function flattenDeep(array: any[]): any[] {
     return [array];
   }
 }
+
+/**
+ * Returns an object composed from key-value pairs.
+ * @param array
+ */
+export function fromPairs(array: any[][]): any {
+  return array.reduce(function(accumulator: any, value) {
+    accumulator[value[0]] = value[1];
+    return accumulator;
+  }, {});
+}
