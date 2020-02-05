@@ -5,11 +5,11 @@ describe('Array flatten methdos', () => {
     expect(flat).toStrictEqual([1, 2, [3, [4]], 5]);
   });
   it('Should flatten empty array', () => {
-    const diff = flatten([]);
-    expect(diff).toStrictEqual([]);
+    const flat = flatten([]);
+    expect(flat).toStrictEqual([]);
   });
   it('Should flatten null', () => {
-    const diff = flatten(null);
-    expect(diff).toStrictEqual([]);
+    const flat = flatten(null);
+    expect(flat).toStrictEqual([]);
   });
 });

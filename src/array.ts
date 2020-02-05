@@ -27,3 +27,15 @@ export function flatten(array: any[] | null) {
   if (!array) return [];
   return array.reduce((a, b) => a.concat(b), []);
 }
+
+/**
+ * Recursively flattens array.
+ * @param array
+ */
+export function flattenDeep(array: any[]): any[] {
+  if (Array.isArray(array)) {
+    return array.reduce((a, b) => a.concat(flattenDeep(b)), []);
+  } else {
+    return [array];
+  }
+}
