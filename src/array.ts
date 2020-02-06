@@ -50,3 +50,14 @@ export function fromPairs(array: any[][]): any {
     return accumulator;
   }, {});
 }
+/**
+ * Returns an array that is the intersection of all the arrays. Each value in the result is present in each of the arrays.
+ * @param array
+ */
+export function intersection(arrays: any[][]): any {
+  return arrays.reduce(function(a, b) {
+    return a.filter(function(value) {
+      return b.includes(value);
+    });
+  });
+}
