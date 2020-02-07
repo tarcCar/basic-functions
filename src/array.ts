@@ -69,3 +69,12 @@ export function intersection(arrays: any[][]): any {
 export function compact(array: any[]): any {
   return array.filter(Boolean);
 }
+
+/**
+ * Creates a slice of array with n elements taken from the end.
+ * @param array
+ */
+export function takeRight(array: any[], size: number): any {
+  if (size > 0) return array.slice(size * -1);
+  else return array.slice(size);
+}
