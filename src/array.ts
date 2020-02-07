@@ -61,3 +61,11 @@ export function intersection(arrays: any[][]): any {
     });
   });
 }
+
+/**
+ * Creates an array with all falsy values removed.
+ * @param array
+ */
+export function compact(array: any[]): any {
+  return array.filter(Boolean);
+}
