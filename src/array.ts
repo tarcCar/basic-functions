@@ -78,3 +78,13 @@ export function takeRight(array: any[], size: number): any {
   if (size > 0) return array.slice(size * -1);
   else return array.slice(size);
 }
+
+/**
+ * Returns an array where matching items are filtered.
+ * @param array
+ */
+export function without(array: any[], value: any): any {
+  return array.filter(item => {
+    return item !== value;
+  });
+}

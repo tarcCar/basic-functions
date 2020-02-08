@@ -1,4 +1,4 @@
-import { flatten } from '../src/array';
+import { flatten } from '../../src/array';
 describe('Array flatten methdos', () => {
   it('Should flatten one level deep', () => {
     const flat = flatten([1, [2, [3, [4]], 5]]);

@@ -1,4 +1,4 @@
-import { fromPairs } from '../src/array';
+import { fromPairs } from '../../src/array';
 describe('Array from pairs methdos', () => {
   it('Should make pairs form array', () => {
     const pairs = fromPairs([

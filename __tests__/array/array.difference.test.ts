@@ -1,4 +1,4 @@
-import { difference } from '../src/array';
+import { difference } from '../../src/array';
 describe('Array difference methdos', () => {
   it('Should get differents elements from arrays', () => {
     const diff = difference([1, 2, 3, 4, 5], [5, 2, 10]);

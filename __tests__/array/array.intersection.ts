@@ -1,4 +1,4 @@
-import { intersection } from '../src/array';
+import { intersection } from '../../src/array';
 describe('Array intersection methdos', () => {
   it('Should make intersection from arrays', () => {
     const intersections = intersection([

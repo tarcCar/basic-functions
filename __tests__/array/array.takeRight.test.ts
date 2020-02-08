@@ -1,4 +1,4 @@
-import { takeRight } from '../src/array';
+import { takeRight } from '../../src/array';
 describe('Array takeRight methdos', () => {
   it('Should get all element of array but first', () => {
     const array = takeRight([1, 2, 3, 4, 5], 4);

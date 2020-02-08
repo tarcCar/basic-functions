@@ -1,4 +1,4 @@
-import { chunck } from '../src/array';
+import { chunck } from '../../src/array';
 
 describe('Array chunck methods', () => {
   it('Should chuck array with size 2', () => {
