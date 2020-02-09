@@ -50,3 +50,12 @@ export function minBy(data: any[], key: string) {
 export function maxBy(data: any[], key: string) {
   return data.reduce(maxByValue(key));
 }
+
+/**
+ * Gets a random element from array.
+ * @param array
+ */
+export function sample(array: any[]) {
+  const len = array == null ? 0 : array.length;
+  return len ? array[Math.floor(Math.random() * len)] : undefined;
+}
