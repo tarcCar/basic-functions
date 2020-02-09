@@ -30,3 +30,23 @@ export function keyBy(array: any[] | any, key?: string) {
         key,
       );
 }
+
+const makeSelect = (comparator: any) => (a: any, b: any) => (comparator(a, b) ? a : b);
+const minByValue = (key: string) => makeSelect((a: any, b: any) => a[key] <= b[key]);
+const maxByValue = (key: string) => makeSelect((a: any, b: any) => a[key] >= b[key]);
+/**
+ * Use Array#reduce for find the minimum collection item
+ * @param data
+ * @param key
+ */
+export function minBy(data: any[], key: string) {
+  return data.reduce(minByValue(key));
+}
+/**
+ * Use Array#reduce for find the maximum collection item
+ * @param data
+ * @param key
+ */
+export function maxBy(data: any[], key: string) {
+  return data.reduce(maxByValue(key));
+}
