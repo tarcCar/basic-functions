@@ -67,3 +67,11 @@ export function sample(array: any[]) {
 export function sortBy(array: any[], key: string) {
   return array.concat().sort((a, b) => (a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0));
 }
+
+/**
+ * Produces a duplicate-free version of the array, using === to test object equality.
+ * @param array
+ */
+export function uniq(array: any[]) {
+  return [...new Set(array)];
+}
