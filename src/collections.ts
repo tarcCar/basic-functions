@@ -59,3 +59,11 @@ export function sample(array: any[]) {
   const len = array == null ? 0 : array.length;
   return len ? array[Math.floor(Math.random() * len)] : undefined;
 }
+
+/**
+ * Sorts an array of object based on an object key provided by a parameter
+ * @param array
+ */
+export function sortBy(array: any[], key: string) {
+  return array.concat().sort((a, b) => (a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0));
+}
