@@ -1,6 +1,7 @@
 import { throttle } from '../../src/functions';
 import { delay } from '../utils/delay';
-describe('Function partial methdos', () => {
+
+describe('throttle', () => {
   it('Not should execute function more than 1 time', () => {
     let count = 0;
     const hello = () => {

@@ -1,5 +1,5 @@
 import { sortBy } from '../../src/collections';
-describe('Collection sort by methdos', () => {
+describe('sortBy', () => {
   it('Should sort array', () => {
     const array = [
       {

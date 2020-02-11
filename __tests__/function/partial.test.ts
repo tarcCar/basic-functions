@@ -1,6 +1,6 @@
 import { partial } from '../../src/functions';
 
-describe('Function partial methdos', () => {
+describe('partial', () => {
   it('Should create a function with partial', () => {
     const greet = (greeting: string, name: string) => {
       return greeting + ' ' + name;

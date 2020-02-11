@@ -1,7 +1,7 @@
 import { debounce } from '../../src/functions';
 jest.useFakeTimers();
 
-describe('Function debounce methdos', () => {
+describe('debounce', () => {
   it('Should call function after time out', () => {
     const callback = jest.fn();
     const functionDebounce = debounce(callback, 1000);

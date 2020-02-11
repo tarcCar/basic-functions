@@ -1,5 +1,6 @@
 import { groupBy } from '../../src/collections';
-describe('Collection groupby methdos', () => {
+
+describe('groupBy', () => {
   it('Should group by key length', () => {
     const array = ['one', 'two', 'three'];
     const groups = groupBy(array, 'length');

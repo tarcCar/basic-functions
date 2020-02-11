@@ -1,6 +1,6 @@
 import { extend } from '../../src/object';
 
-describe('Object extend methdos', () => {
+describe('extend', () => {
   it('Should extend two objects', () => {
     let foo = { a: '1' };
     let bar = { b: '2' };

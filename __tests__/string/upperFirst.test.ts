@@ -1,6 +1,6 @@
 import { upperFirst } from '../../src/string';
 
-describe('String upper first methdos', () => {
+describe('upper first', () => {
   it('Should upper first letter of string', () => {
     const s = 'goku';
     const result = upperFirst(s);

@@ -1,6 +1,6 @@
 import { onlyNumbers } from '../../src/string';
 
-describe('String only numbers methods', () => {
+describe('only numbers', () => {
   it('Should get only numbers', () => {
     const s = 'auhauhuha4auhuaheu2';
     const result = onlyNumbers(s);

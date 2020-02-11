@@ -1,6 +1,6 @@
 import { isEmpty } from '../../src/lang';
 
-describe('Lang isEmpty methdos', () => {
+describe('isEmpty', () => {
   it('Should returns true for empty object', () => {
     const result = isEmpty({});
     expect(result).toBe(true);

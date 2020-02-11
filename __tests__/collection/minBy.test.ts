@@ -1,5 +1,5 @@
 import { minBy } from '../../src/collections';
-describe('Collection keyBy methdos', () => {
+describe('minBy', () => {
   it('Should execute min string value from array with key', () => {
     const minValue = minBy(
       [

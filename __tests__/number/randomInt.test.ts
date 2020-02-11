@@ -1,6 +1,6 @@
 import { randomInt } from '../../src/number';
 
-describe('Number randomInt methods', () => {
+describe('randomInt', () => {
   it('Should return just 0 and 1', () => {
     for (let i = 0; i < 100; i++) {
       const result = randomInt();

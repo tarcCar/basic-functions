@@ -1,6 +1,6 @@
 import { inRange } from '../../src/number';
 
-describe('Number inRange methods', () => {
+describe('inRange', () => {
   it('Should return true if number 3 is between 2 and 6', () => {
     const result = inRange(3, 2, 6);
     expect(result).toBe(true);

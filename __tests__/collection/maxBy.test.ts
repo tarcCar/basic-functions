@@ -1,5 +1,5 @@
 import { maxBy } from '../../src/collections';
-describe('Collection keyBy methdos', () => {
+describe('maxBy', () => {
   it('Should execute max string value from array with key', () => {
     const maxValue = maxBy(
       [

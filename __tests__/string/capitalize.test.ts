@@ -1,6 +1,6 @@
 import { capitalize } from '../../src/string';
 
-describe('String capitalize methdos', () => {
+describe('capitalize', () => {
   it('Should capitalize string', () => {
     const s = 'goku is stronger than superman!';
     const result = capitalize(s);

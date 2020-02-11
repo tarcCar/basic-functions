@@ -1,6 +1,6 @@
 import { random } from '../../src/number';
 
-describe('Number random methods', () => {
+describe('random', () => {
   it('Should return floating-point number between 0 and 1', () => {
     for (let i = 0; i < 100; i++) {
       const result = random();

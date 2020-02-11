@@ -1,5 +1,6 @@
 import { keyBy } from '../../src/collections';
-describe('Collection keyBy methdos', () => {
+
+describe('keyBy', () => {
   it('Should execute keyBy on array without key', () => {
     const keysBys = keyBy(['a', 'b', 'c']);
     expect(keysBys).toStrictEqual({ a: 'a', b: 'b', c: 'c' });
