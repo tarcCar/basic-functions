@@ -1,8 +1,7 @@
 import { inRange } from '../../src/number';
 
-describe('Number inRange methdos', () => {
+describe('Number inRange methods', () => {
   it('Should return true if number 3 is between 2 and 6', () => {
-    const s = 'goku is stronger than superman!';
     const result = inRange(3, 2, 6);
     expect(result).toBe(true);
   });
@@ -13,7 +12,6 @@ describe('Number inRange methdos', () => {
   });
 
   it('Should return true if number -3 is between -2 and -6', () => {
-    const s = 'goku is stronger than superman!';
     const result = inRange(-3, -2, -6);
     expect(result).toBe(true);
   });
