@@ -22,3 +22,12 @@ export function capitalize(s: string | null) {
   });
   return sentence;
 }
+
+/**
+ * Returns only numbers from given string
+ * @param s
+ */
+export function onlyNumbers(s: string | null) {
+  if (!s) return '';
+  return s.replace(/\D/g, '');
+}
