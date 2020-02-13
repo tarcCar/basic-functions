@@ -24,8 +24,24 @@
     "Lodash",
     "basic functions"
   ],
-  "author": "Tarcísio Mulatti de Carvalho",
-  "license": "ISC",
+  "author": {
+    "name": "Tarcísio Mulatti de Carvalho",
+    "email": "tarc.car@gmail.com",
+    "url": "https://github.com/tarcCar"
+  },
+  "homepage": "https://github.com/tarcCar/basic-functions",
+  "repository": {
+    "url": "https://github.com/tarcCar/basic-functions",
+    "type": "git"
+  },
+  "contributors": [
+    {
+      "name": "Tarcísio Mulatti de Carvalho",
+      "email": "tarc.car@gmail.com",
+      "url": "https://github.com/tarcCar"
+    }
+  ],
+  "license": "GPL-3.0",
   "devDependencies": {
     "@types/jest": "^25.1.1",
     "jest": "^25.1.0",
